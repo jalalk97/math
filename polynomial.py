@@ -26,9 +26,4 @@ class Polynomial(object):
 	def __rmul__(self, scalar):
 		return Polynomial(scalar * self.coefficients)
 
-if __name__ == "__main__":
-	coef = Matrix([[1, 2, 1]])
-	coef.transpose()
-	f = Polynomial(coef)
-	print(f*f)
-	
+

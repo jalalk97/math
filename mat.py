@@ -1,9 +1,3 @@
-'''
-This is a change made by me (abder)
-'''
-
-#My change
-
 class Matrix(object):
 	def __init__(self, matrix):
 		from fractions import Fraction
@@ -169,21 +163,3 @@ class Matrix(object):
 			start += 1
 		product = Matrix(product_matrix)
 		product.transpose()
-		
-				
-
-
-		
-		
-if __name__ == "__main__":
-	a = [	[0,0,0,0,0,0,1],
-		[0,0,2,1,0,1,0],
-		[0,0,0,1,1,3,0],
-		[0,0,6,1,0,1,0],
-		[0,1,0,1,0,0,0],
-		[1,0,0,1,0,2,0]
-	]
-	A4 = Matrix(a)
-	A4.switch_rows(0, 6)
-	A4.switch_columns(0, 6)
-	print(A4)
